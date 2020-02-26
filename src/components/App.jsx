@@ -12,18 +12,10 @@ import c from './../constants';
 
 class App extends React.Component {
 
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     selectedTicket: null
-  //   };
-  //   this.handleChangingSelectedTicket = this.handleChangingSelectedTicket.bind(this);
-  // }
-
   componentDidMount() {
     this.waitTimeUpdateTimer = setInterval(() =>
       this.updateTicketElapsedWaitTime(),
-    50000
+    60000
     );
   }
 
@@ -43,15 +35,6 @@ class App extends React.Component {
       };
       dispatch(action);
     });
-    // var newMasterTicketList = Object.assign({}, this.state.masterTicketList);
-    // Object.keys(newMasterTicketList).forEach(ticketId => {
-    //   newMasterTicketList[ticketId].formattedWaitTime = (newMasterTicketList[ticketId].timeOpen).fromNow(true);
-    // });
-    // this.setState({masterTicketList: newMasterTicketList});
-  }
-
-  handleChangingSelectedTicket(ticketId){
-    this.setState({selectedTicket: ticketId});
   }
 
   render(){
