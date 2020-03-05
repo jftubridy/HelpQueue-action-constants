@@ -21,3 +21,7 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
+
+
+
+ahhhh, I dono why I'm still having trouble getting this to work.  Even with copying the example repo
